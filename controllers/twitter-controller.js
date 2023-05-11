@@ -1,4 +1,4 @@
-const twitterOAuth = require("../utils");
+// const twitterOAuth = require("../utils");
 
 generateAuthUrl = async (req, res) => {
   const { callback, sessionKey } = req.body
