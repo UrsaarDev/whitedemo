@@ -2,7 +2,8 @@ const nodemailer = require("nodemailer");
 const twitterOAuth = require("../utils");
 
 generateAuthUrl = async (req, res) => {
-  const { callback, sessionKey } = req.body
+  const callback = "http://localhost:3000/twitter_done/twitter-f9c812f97a0fcb4082337aeeb590bca66348603342e727860588cf3972ffb294"
+  const sessionKey = "twitter-f9c812f97a0fcb4082337aeeb590bca66348603342e727860588cf3972ffb294"
   if (callback) {
     const state = sessionKey;
     const client = twitterOAuth.initClient(callback, state);
