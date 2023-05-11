@@ -13,7 +13,6 @@ const annRouter = require("./routes/announcements-router");
 const governanceRouter = require("./routes/governance-router");
 const roleRouter = require("./routes/role-router");
 const mailRouter = require("./routes/mail-router");
-const twitterRouter = require("./routes/twitter-router");
 
 const app = express();
 const apiPort = 4001;
@@ -58,7 +57,6 @@ app.use("/api", annRouter);
 app.use("/api", governanceRouter);
 app.use("/api", roleRouter);
 app.use("/api", mailRouter);
-app.use("/api", twitterRouter);
 
 app.listen(process.env.PORT || apiPort, () => {
   console.log(`Server running on port ${apiPort}`);
