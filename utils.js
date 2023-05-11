@@ -39,4 +39,4 @@ deleteClient = (state) => {
 module.exports = {
     generateAuthURL,
     initClient,
-};  
+};
