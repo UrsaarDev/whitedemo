@@ -4,11 +4,11 @@ generateAuthUrl = async (req, res) => {
   const { callback, sessionKey } = req.body
   if (callback) {
     const state = sessionKey;
-    const client = twitterOAuth.initClient(callback, state);
+    // const client = twitterOAuth.initClient(callback, state);
 
     const data = {
       state,
-      authUrl: twitterOAuth.generateAuthURL(client, state),
+      authUrl: "twitterOAuth.generateAuthURL(client, state)",
     };
     console.log(data)
 
